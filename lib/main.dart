@@ -6,11 +6,12 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: const HomePage(),
     routes: {
       "/message": (context) => const MessagePage(),
       "/story": (context) => const StoryPage(),
-      "/video-call": (context) => const VideoCallPage()
+      "/video-call": (context) => VideoCallPage()
     },
   ));
 }
